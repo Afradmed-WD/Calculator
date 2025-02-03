@@ -1,0 +1,87 @@
+/* Style général de la calculatrice */
+.calculator {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* Affichage du résultat */
+.display {
+  width: 100%;
+  height: 70px;
+  background-color: #292929;
+  color: #fff;
+  font-size: 28px;
+  text-align: right;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-family: "Arial", sans-serif;
+  overflow-x: auto;
+}
+
+/* Conteneur des boutons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Style des boutons */
+button {
+  width: 100%;
+  height: 60px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button:active {
+  background-color: #777;
+  transform: scale(0.95);
+}
+
+/* Boutons des opérateurs */
+.operator {
+  background-color: #f39c12;
+}
+
+.operator:hover {
+  background-color: #e67e22;
+}
+
+.operator:active {
+  background-color: #d35400;
+}
+
+/* Bouton C (Clear) */
+.clear {
+  background-color: #e74c3c;
+}
+
+.clear:hover {
+  background-color: #c0392b;
+}
+
+/* Bouton = (Égal) */
+.equal {
+  background-color: #27ae60;
+}
+
+.equal:hover {
+  background-color: #2ecc71;
+}
